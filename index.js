@@ -1,15 +1,16 @@
 #! /usr/bin/env node
 
+import { showTODOStatus } from "./commands/show-status.js";
 import { Command } from "commander";
-import chalk from "chalk";
 
 const program = new Command();
 
 program
-  .command("test-command")
-  .description("This is test command")
-  .action(() => {
-    console.log(chalk.blue.bold("Test command executed succesfully"));
+  .command("show-status")
+  .description("show the status of todos")
+  .action((args) => {
+        showTODOStatus();
+
   });
 
 program.parse();
