@@ -1,0 +1,8 @@
+node_modules
+logs
+*.env
+secret.yaml
+*.swp
+.DS_Store
+.idea
+.vscode
