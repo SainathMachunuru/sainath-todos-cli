@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
-import { showTODOStatus } from "./commands/show-status.js";
-import { Command, Option } from "commander";
+const { showTODOStatus } =  require("./commands/show-status")
+const { Command, Option } =  require("commander");
 
 const program = new Command();
 
